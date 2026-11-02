@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Alice Nahyeon Kim — Korean–English interpreter specializing in institutional, healthcare, pension and finance, academic, and media settings.">
+<title>Alice Nahyeon Kim | Korean–English Interpreter</title>
+<style>
+:root{--red:#941426;--red2:#76101f;--ink:#272321;--muted:#716965;--paper:#fbf8f4;--white:#fffdfa;--line:#e8ded7;--rose:#f2e9e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 "Helvetica Neue",Arial,sans-serif}
+a{color:inherit}.bar{background:var(--red);color:white;padding:20px 7vw;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-size:12px;letter-spacing:.17em;text-transform:uppercase}.nav{display:flex;gap:26px;align-items:center}.nav a{text-decoration:none;font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.9}.nav a:hover{text-decoration:underline}
+.lang{border:1px solid #d9aeb4;background:transparent;color:white;padding:7px 10px;cursor:pointer;font-size:11px;letter-spacing:.1em}
+.hero{background:var(--red);color:#fffaf5;padding:100px 12vw 112px;min-height:540px;display:flex;align-items:center}
+.hero-inner{max-width:940px}.eyebrow,.kicker{font-size:11px;letter-spacing:.23em;text-transform:uppercase}.eyebrow{color:#edcfd1}.hero h1{font-size:clamp(43px,7vw,82px);line-height:1.02;letter-spacing:-.055em;font-weight:500;margin:22px 0 18px}.hero h1 .ko{display:block;font-size:.43em;letter-spacing:.08em;margin-bottom:17px}.role{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#f0dadd}.hero p{font-size:18px;color:#f5e7e5;max-width:650px;margin:25px 0 34px}.cta{display:inline-block;border:1px solid #f7e8e5;padding:12px 21px;text-decoration:none;text-transform:uppercase;font-size:11px;letter-spacing:.13em}.cta:hover{background:#fff;color:var(--red)}
+main{max-width:1120px;margin:auto;padding:85px 7vw}.section{margin-bottom:88px}.kicker{color:var(--red)}h2{font-weight:500;letter-spacing:-.04em;font-size:clamp(30px,4vw,44px);line-height:1.15;margin:13px 0 25px}.lead{font-size:18px;max-width:820px;color:#4e4844}.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:55px;align-items:start}.note{border-left:2px solid var(--red);padding:5px 0 5px 22px;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.tile{background:var(--white);border:1px solid var(--line);padding:24px;min-height:150px}.tile .num{font-size:11px;color:var(--red);letter-spacing:.15em}.tile h3{font-size:17px;font-weight:600;margin:13px 0 6px}.tile p{font-size:13px;color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.service{padding:26px;background:var(--rose)}.service h3{font-size:18px;margin:0 0 8px;font-weight:600}.service p{font-size:14px;color:var(--muted);margin:0}
+.approach{padding:36px;background:#eee5df;display:grid;grid-template-columns:1fr 1fr;gap:35px}.approach p{color:var(--muted);margin:0}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;background:var(--white);border:1px solid var(--line);padding:38px}.contact p{color:var(--muted)}.email{color:var(--red);font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+form{display:grid;gap:13px}label{font-size:11px;letter-spacing:.07em;text-transform:uppercase;display:grid;gap:5px}input,select,textarea{font:14px Arial;padding:12px;border:1px solid #d9cec7;background:#fff;color:var(--ink);width:100%;border-radius:0}textarea{min-height:100px;resize:vertical}button.submit{background:var(--red);color:white;border:0;padding:14px 20px;justify-self:start;font-size:11px;letter-spacing:.13em;text-transform:uppercase;cursor:pointer}button.submit:hover{background:var(--red2)}.small{font-size:11px;color:var(--muted)}
+footer{background:#65101c;color:#ead9d8;padding:25px 7vw;display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.05em}
+.ko-copy{display:none}
+body.ko .en-copy{display:none}body.ko .ko-copy{display:block}
+@media(max-width:760px){.bar{align-items:flex-start;flex-wrap:wrap}.nav{gap:15px;flex-wrap:wrap}.hero{padding:75px 8vw;min-height:470px}main{padding:65px 8vw}.about-grid,.approach,.contact{grid-template-columns:1fr;gap:25px}.grid,.services{grid-template-columns:1fr}.tile{min-height:0}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="brand">Alice Nahyeon Kim</div>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#about"><span class="en-copy">About</span><span class="ko-copy">소개</span></a>
+    <a href="#expertise"><span class="en-copy">Expertise</span><span class="ko-copy">전문 분야</span></a>
+    <a href="#services"><span class="en-copy">Services</span><span class="ko-copy">서비스</span></a>
+    <a href="#contact"><span class="en-copy">Contact</span><span class="ko-copy">문의</span></a>
+    <button class="lang" type="button" id="languageToggle" aria-label="Switch language">한국어</button>
+  </nav>
+</header>
+
+<section class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow"><span class="en-copy">Korean ↔ English</span><span class="ko-copy">한국어 ↔ 영어</span></div>
+  <h1><span class="ko">김나현</span>Alice Nahyeon Kim</h1>
+  <div class="role"><span class="en-copy">Independent Korean–English Interpreter</span><span class="ko-copy">한영 전문 통역</span></div>
+  <p class="en-copy">Bridging languages and perspectives with clarity, context, and care.</p>
+  <p class="ko-copy">언어와 관점을 연결하고, 맥락과 의미를 정확하게 전달합니다.</p>
+  <a class="cta" href="#contact"><span class="en-copy">Discuss an assignment</span><span class="ko-copy">통역 의뢰 문의</span></a>
+ </div>
+</section>
+
+<main>
+<section class="section" id="about">
+ <div class="kicker">01 / <span class="en-copy">Profile</span><span class="ko-copy">프로필</span></div>
+ <div class="about-grid">
+  <div>
+   <h2 class="en-copy">Language expertise grounded in media and journalism.</h2>
+   <h2 class="ko-copy">저널리즘과 미디어에 대한 이해를 바탕으로 한 전문 통역.</h2>
+   <p class="lead en-copy">Alice Nahyeon Kim is a Korean–English interpreter with a background in journalism and media research. Her experience across public institutions, healthcare, pension and finance, academia, and media informs a thoughtful, context-sensitive approach to interpreting.</p>
+   <p class="lead ko-copy">김나현은 저널리즘 및 미디어 연구 배경을 바탕으로 한국어와 영어 간 통역 서비스를 제공합니다. 공공기관, 의료·보건, 연금·금융, 학술·연구, 미디어 분야에 대한 경험과 이해를 바탕으로 상황과 맥락에 맞는 정확하고 자연스러운 의사소통을 지원합니다.</p>
+  </div>
+  <aside class="note">
+   <span class="en-copy">A strong understanding of subject matter, terminology, and communication context is essential to meaningful interpreting.</span>
+   <span class="ko-copy">전문 분야에 대한 이해와 정확한 용어 사용, 소통의 맥락을 함께 고려합니다.</span>
+  </aside>
+ </div>
+</section>
+
+<section class="section" id="expertise">
+ <div class="kicker">02 / <span class="en-copy">Areas of experience</span><span class="ko-copy">경험 분야</span></div>
+ <h2 class="en-copy">Sector knowledge. Contextual understanding.</h2><h2 class="ko-copy">분야에 대한 이해, 맥락을 살리는 통역.</h2>
+ <div class="grid">
+  <article class="tile"><div class="num">01</div><h3 class="en-copy">Public Sector</h3><h3 class="ko-copy">공공기관</h3><p class="en-copy">Institutional communication and public-sector discussions.</p><p class="ko-copy">공공기관 및 제도 관련 소통과 논의</p></article>
+  <article class="tile"><div class="num">02</div><h3 class="en-copy">Healthcare</h3><h3 class="ko-copy">의료·보건</h3><p class="en-copy">Healthcare systems, medical institutions, and professional dialogue.</p><p class="ko-copy">보건의료 제도, 의료기관 및 전문 분야 소통</p></article>
+  <article class="tile"><div class="num">03</div><h3 class="en-copy">Pension &amp; Finance</h3><h3 class="ko-copy">연금·금융</h3><p class="en-copy">Pension systems, investments, and financial topics.</p><p class="ko-copy">연금제도, 투자 및 금융 관련 주제</p></article>
+  <article class="tile"><div class="num">04</div><h3 class="en-copy">Academia &amp; Research</h3><h3 class="ko-copy">학술·연구</h3><p class="en-copy">Academic exchange, research, and scholarly events.</p><p class="ko-copy">학술 교류, 연구 및 학술 행사</p></article>
+  <article class="tile"><div class="num">05</div><h3 class="en-copy">Media &amp; Journalism</h3><h3 class="ko-copy">미디어·저널리즘</h3><p class="en-copy">Media, journalism, and communications-related discussions.</p><p class="ko-copy">미디어, 저널리즘 및 커뮤니케이션 관련 논의</p></article>
+  <article class="tile"><div class="num">06</div><h3 class="en-copy">Cross-cultural Communication</h3><h3 class="ko-copy">다문화 커뮤니케이션</h3><p class="en-copy">Helping participants connect across languages and contexts.</p><p class="ko-copy">언어와 문화적 맥락을 고려한 원활한 소통 지원</p></article>
+ </div>
+</section>
+
+<section class="section" id="services">
+ <div class="kicker">03 / <span class="en-copy">Services</span><span class="ko-copy">통역 서비스</span></div>
+ <h2 class="en-copy">Interpreting services</h2><h2 class="ko-copy">제공 서비스</h2>
+ <div class="services">
+  <article class="service"><h3 class="en-copy">Consecutive Interpreting</h3><h3 class="ko-copy">순차통역</h3><p class="en-copy">Clear and accurate interpretation for meetings, interviews, and formal discussions.</p><p class="ko-copy">회의, 인터뷰 및 공식 논의에서 발언의 의미와 맥락을 정확하게 전달합니다.</p></article>
+  <article class="service"><h3 class="en-copy">Accompaniment Interpreting</h3><h3 class="ko-copy">수행통역</h3><p class="en-copy">On-site language support for visits, delegations, and professional engagements.</p><p class="ko-copy">기관 방문, 대표단 일정 및 각종 업무 수행 현장에서 의사소통을 지원합니다.</p></article>
+  <article class="service"><h3 class="en-copy">Meeting Interpreting</h3><h3 class="ko-copy">회의통역</h3><p class="en-copy">Interpreting support for business, institutional, and academic meetings.</p><p class="ko-copy">기업, 공공기관 및 학술 분야의 회의와 협의에 통역 서비스를 제공합니다.</p></article>
+ </div>
+</section>
+
+<section class="section">
+ <div class="kicker">04 / <span class="en-copy">Approach</span><span class="ko-copy">통역의 기준</span></div>
+ <div class="approach">
+  <div><h2 class="en-copy">Beyond words.</h2><h2 class="ko-copy">단어를 넘어 의미까지.</h2></div>
+  <p class="en-copy">Effective interpreting is more than replacing words from one language with another. It requires listening closely, understanding the subject, recognizing context, and conveying meaning with precision and professionalism.</p>
+  <p class="ko-copy">좋은 통역은 단어를 다른 언어로 옮기는 데 그치지 않습니다. 발언을 정확히 듣고, 주제와 배경을 이해하며, 상황에 맞게 의미를 전달하는 것이 중요합니다.</p>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="kicker">05 / <span class="en-copy">Contact</span><span class="ko-copy">문의</span></div>
+ <div class="contact">
+  <div><h2 class="en-copy">Let’s work together.</h2><h2 class="ko-copy">통역 의뢰를 기다립니다.</h2>
+   <p class="en-copy">Please share the event details, subject area, date, and expected duration. I’ll get back to you by email.</p>
+   <p class="ko-copy">행사 및 통역 주제, 일정, 예상 소요 시간을 알려주시면 이메일로 회신드리겠습니다.</p>
+   <a class="email" href="mailto:alicekim.contact@gmail.com">alicekim.contact@gmail.com</a>
+  </div>
+  <form id="inquiryForm">
+   <label><span class="en-copy">Name</span><span class="ko-copy">성함</span><input name="name" autocomplete="name" required></label>
+   <label><span class="en-copy">Email</span><span class="ko-copy">이메일</span><input name="email" type="email" autocomplete="email" required></label>
+   <label><span class="en-copy">Date / timeframe</span><span class="ko-copy">통역 날짜 및 시간</span><input name="date" placeholder="e.g. 15 June 2027"></label>
+   <label><span class="en-copy">Service</span><span class="ko-copy">통역 유형</span><select name="service"><option value="">Select / 선택</option><option>Consecutive interpreting / 순차통역</option><option>Accompaniment interpreting / 수행통역</option><option>Meeting interpreting / 회의통역</option><option>Other / 기타</option></select></label>
+   <label><span class="en-copy">Assignment details</span><span class="ko-copy">의뢰 내용</span><textarea name="details" placeholder="Topic, location or online format, expected duration…"></textarea></label>
+   <button class="submit" type="submit"><span class="en-copy">Send inquiry</span><span class="ko-copy">문의 보내기</span></button>
+   <div class="small en-copy">This form opens your email application with the inquiry details prepared.</div>
+   <div class="small ko-copy">문의 내용을 작성한 이메일 창이 열립니다.</div>
+  </form>
+ </div>
+</section>
+</main>
+<footer><span>김나현 · Alice Nahyeon Kim</span><span>Independent Korean–English Interpreter</span></footer>
+<script>
+const toggle=document.getElementById('languageToggle');
+toggle.addEventListener('click',()=>{document.body.classList.toggle('ko');const isKo=document.body.classList.contains('ko');document.documentElement.lang=isKo?'ko':'en';toggle.textContent=isKo?'English':'한국어';});
+document.getElementById('inquiryForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(e.currentTarget);const body=['Name: '+d.get('name'),'Email: '+d.get('email'),'Date: '+d.get('date'),'Service: '+d.get('service'),'','Details:',d.get('details')].join('\n');location.href='mailto:alicekim.contact@gmail.com?subject='+encodeURIComponent('Interpreting inquiry — '+d.get('name'))+'&body='+encodeURIComponent(body);});
+</script>
+</body>
+</html>
